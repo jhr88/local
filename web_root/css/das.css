@@ -1,0 +1,290 @@
+/* banner */
+.sub_big_banner {
+  background: url(../images/dasus/banner_dasus.png) no-repeat center top / cover;
+}
+
+.dp_big_banner {
+  background: url(../images/dasplanner/banner_dasplanner.png) no-repeat center top / cover;
+}
+
+#wrap {
+  flex-direction: column;
+}
+
+.sub_tit {
+  position: initial;
+  color: #2e53a0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sub_tit h2 {
+  font-size: 42px;
+}
+
+.sub_tit hr {
+  border-bottom: 2px solid #2e53a0;
+  width: 37%;
+}
+
+/*main_function*/
+
+.main_function {
+  margin: 10% 0;
+}
+
+.main_function_int {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main_function_int li {
+  width: 25%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dp_int li {
+  width: 20%;
+}
+
+.main_function_int li h4 {
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.main_function_int li img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/*cont_list*/
+.cont_list ul {
+  width: 100%;
+}
+
+.cont_list ul li {
+  background: url(../images/dasus/dasus_long1.png) no-repeat 20% center / cover;
+  height: 600px;
+  width: 100%;
+}
+
+.cont_list ul li:nth-child(2) {
+  background: url(../images/dasus/dasus_long2.png) no-repeat 75% center / cover;
+}
+
+.cont_list ul li:nth-child(3) {
+  background: url(../images/dasus/dasus_long3.png) no-repeat 20% center / cover;
+}
+
+.dp_list ul li:nth-child(1) {
+  background: url(../images/dasplanner/dasplanner_long1.png) no-repeat 20% center / cover;
+}
+
+.dp_list ul li:nth-child(2) {
+  background: url(../images/dasplanner/dasplanner_long2.png) no-repeat 75% center / cover;
+}
+
+.dp_list ul li:nth-child(3) {
+  background: url(../images/dasplanner/dasplanner_long3.png) no-repeat 20% center / cover;
+}
+
+.dp_list ul li:nth-child(4) {
+  background: url(../images/dasplanner/dasplanner_long4.png) no-repeat 75% center / cover;
+}
+
+.cont_list ul li > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cont_list ul li:nth-child(2) > .container {
+  justify-content: flex-start;
+  color: #2e53a0;
+}
+
+.cont_list ul li:nth-child(4) > .container {
+  justify-content: flex-start;
+}
+
+.list_text {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.list_text h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.list_text span {
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+/* bottom_banner */
+
+.dasus_bottom_banner {
+  margin-top: 10%;
+  background: url(../images/dasus/dasus_bottom.png) no-repeat center center / cover;
+  width: 100%;
+  height: 40vw;
+}
+
+.dasplanner_bottom_banner {
+  margin-top: 10%;
+  background: url(../images/dasplanner/dadplanner_bottom.png) no-repeat center center / cover;
+  width: 100%;
+  height: 40vw;
+}
+
+@media all and (max-width: 1280px) {
+  .sub_tit h2 {
+    font-size: 36px;
+  }
+
+  /*cont_list*/
+  .cont_list ul li {
+    height: 450px;
+  }
+
+  .list_text h3 {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .sub_tit h2 {
+    font-size: 30px;
+  }
+
+  .sub_tit hr {
+    width: 50%;
+  }
+
+  .main_function_int li h4 {
+    font-size: 19px;
+  }
+
+  /*cont_list*/
+  .cont_list ul li {
+    height: 300px;
+  }
+  .list_text {
+    width: 50%;
+    margin-right: 0%;
+  }
+  .list_text h3 {
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .sub_tit hr {
+    display: none;
+  }
+
+  /*main_function*/
+  .main_function_int li {
+    width: 30%;
+  }
+
+  .main_function_int li h4 {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  /* dp_int */
+  .dp_int {
+    flex-wrap: wrap;
+  }
+
+  .dp_int li {
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  /*cont_list*/
+  .cont_list ul li:nth-child(1) {
+    background: #ffe455;
+  }
+
+  .cont_list ul li:nth-child(2) {
+    background: #a4c9f6;
+  }
+
+  .cont_list ul li:nth-child(3),
+  .dp_list ul li:nth-child(4) {
+    background: #ffb38d;
+  }
+
+  .dp_list ul li:nth-child(1) {
+    background: #ffbdd0;
+  }
+
+  .dp_list ul li:nth-child(3) {
+    background: #fffeac;
+  }
+
+  .cont_list ul li > .container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cont_list ul li:nth-child(2) > .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cont_list ul li {
+    height: 200px;
+  }
+
+  .list_text {
+    width: 91%;
+    margin-right: 0;
+  }
+
+  .list_text h3 {
+    background: #fff;
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .list_text span {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .sub_tit h2 {
+    font-size: 25px;
+  }
+
+  .main_function_int li h4 {
+    font-size: 14px;
+  }
+  .main_function_int li img {
+    border-radius: 10px;
+  }
+
+  /*cont_list*/
+
+  .list_text {
+    width: 100%;
+  }
+
+  .list_text h3 {
+    font-size: 16px;
+  }
+}

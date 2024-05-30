@@ -1,0 +1,265 @@
+#wrap {
+  width: 100%;
+  flex-direction: column;
+}
+
+/* banner */
+.sub_big_banner {
+  background: url(../images/ankusDASOps/banner_ankusDASOps.png) no-repeat center top / cover;
+}
+
+/* logo_intro */
+.logo_intro {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 0;
+}
+
+.intro_group img {
+  width: 100%;
+}
+
+.intro_group span {
+  margin-top: 30px;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+/* cont_banner */
+.DASus_banner {
+  background: url(../images/ankusDASOps/banner_du.png) no-repeat center top / cover;
+
+  margin-top: 0;
+}
+
+.DASplanner_banner {
+  background: url(../images/ankusDASOps/banner_dp.png) no-repeat center top / cover;
+  margin-top: 0;
+}
+
+.DASus_banner .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.DASplanner_banner .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.DASus_banner .sub_tit_big,
+.DASplanner_banner .sub_tit_big {
+  padding: 15% 2%;
+}
+
+.DASplanner_banner h4,
+.DASus_banner h4 {
+  margin-top: 40px;
+}
+
+.DASus_banner .white_btn,
+.DASplanner_banner .white_btn {
+  width: 200px;
+}
+
+/*oldVer*/
+.oldVer {
+  background: #f2f6ff;
+  padding: 5% 0;
+}
+
+.oldVer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.oldVer .tit_cont {
+  width: 64%;
+  text-align: center;
+}
+
+.old_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+
+.old_cont li {
+  width: 20%;
+  text-align: center;
+}
+
+.old_cont li h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.old_cont li .dummy {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.old_cont li img {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.oldVer .tit_cont > b:last-child {
+  display: none;
+}
+
+/*bottom_banner*/
+.bottom_banner {
+  position: relative;
+  background-color: #bddffd;
+}
+
+.bottom_banner button {
+  position: absolute;
+  width: 200px;
+  border-radius: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  top: 60%;
+}
+
+@media all and (max-width: 1024px) {
+  .oldVer .container {
+    width: 80%;
+  }
+
+  .br_1280 {
+    display: none;
+  }
+
+  .oldVer .tit_cont {
+    width: 82%;
+  }
+
+  .old_cont {
+    justify-content: space-evenly;
+  }
+
+  .old_cont li {
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .old_cont li h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .old_cont li .dummy {
+    margin-bottom: 5px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* intro_group */
+  .intro_group {
+    width: 60%;
+  }
+
+  /* das_banner */
+  .DASus_banner .sub_tit_big,
+  .DASplanner_banner .sub_tit_big {
+    padding: 15% 0%;
+  }
+
+  .DASus_banner h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .DASus_banner,
+  .DASplanner_banner {
+    background-color: #999;
+    background-blend-mode: multiply;
+  }
+
+  /*oldVer  */
+
+  .oldVer {
+    padding: 10% 0;
+  }
+
+  .oldVer .tit_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .oldVer .tit_cont span {
+    display: none;
+  }
+
+  .oldVer .tit_cont > b:last-child {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .old_cont li {
+    width: 45%;
+  }
+
+  /*bottom_banner*/
+  .bottom_banner button {
+    width: 160px;
+    height: 32px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .intro_group span {
+    display: none;
+  }
+
+  .DASus_banner .sub_tit_big button,
+  .DASplanner_banner .sub_tit_big button {
+    display: initial;
+  }
+
+  .DASus_banner h4,
+  .DASplanner_banner h4 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.3;
+  }
+
+  /* oldVer */
+
+  .old_cont li h4 {
+    font-size: 13px;
+  }
+
+  .old_cont li p {
+    display: none;
+  }
+
+  /*bottom_banner*/
+  .bottom_banner button {
+    top: 62%;
+    width: 120px;
+    height: 26px;
+  }
+}
